@@ -18,7 +18,7 @@ deliverables: '1 HTML file, 1 CSS file, images'
 
 ## Details
 
-- *Typefaces:* `Georiga`, `PT Sans Narrow`
+- *Typefaces:* `Georgia`, `PT Sans Narrow`
 - *Text sizes:* `1.125rem`, `0.875rem`, `1.25rem`
 - *Line-heights:* `1.5`
 - *Colours:* `#000`, `#fff`, `#afafaf`, `#ccc`, `#323232`, `#bebebe`, `#bd027d`, `#960062`, `#eccee2`
