@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <style type="text/css">
+    .st0 {
+      fill: #323232;
+    }
+  </style>
+  <path class="st0"
+        d="M140.4 99.1v-33h16.5v-49.6h-57.8v49.6h16.5v33h-57.8v140.4h140.4v-140.4h-57.8zm-66.1 24.8h24.8v24.8h-24.8v-24.8zm66.1 90.8h-66.1v-16.5h66.1v16.5zm0-24.8h-66.1v-16.5h66.1v16.5zm0-41.3h-24.8v-24.8h24.8v24.8z" />
+</svg>

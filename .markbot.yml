@@ -1,0 +1,39 @@
+repo: "stunning-start-page"
+canvasCourse: "web-design-1"
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - css
+  - border-box
+  - body-margin-0
+  - nav-hover
+  - img-block-100
+
+html:
+  - path: "index.html"
+    locked: true
+
+css:
+  - path: "css/main.css"
+    has:
+      - ["html", "font-family", "Georgia, serif"]
+      - ["html", "line-height", "1.5"]
+    search:
+      - "display: grid"
+      - "display: flex"
+      - "justify-content"
+      - "align-items"
+      - "gap"
+      - "padding"
+      - "margin"
+      - "background-color"
+      - "color"
+      - "font-family"
+      - "font-style"
+      - "font-weight"
+      - '"PT Sans Narrow", sans-serif'
+
+screenshots:
+  - path: "index.html"
+    sizes: [608]
