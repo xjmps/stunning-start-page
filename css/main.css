@@ -85,3 +85,39 @@ section {
   border-bottom: 2px solid #afafaf;
   border-top: 2px solid #afafaf;
 }
+
+h2 {
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 0 0 1.5rem;
+}
+
+section ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+section ul li {
+  background-color: #ccc;
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "top"
+  "middle"
+  "bottom"
+}
+
+section h3 {
+  grid-area: bottom;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+  z-index: 1;
+  background-color:  rgba(0, 0, 0, .1)
+}
