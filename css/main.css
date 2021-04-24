@@ -20,104 +20,146 @@ img {
   width: 100%;
   display: block;
 
-header {
-  display: grid;
-  grid-template-columns: auto 10rem auto;
-  grid-template-rows: auto 1.5rem;
-  grid-template-areas:
-  "left centre right"
-  ".   center   .";
+  header {
+    display: grid;
+    grid-template-columns: auto 10rem auto;
+    grid-template-rows: auto 1.5rem;
+    grid-template-areas:
+    "left centre right"
+    ".   center   .";
 
-  margin-bottom: 1.5rem;
-}
+    margin-bottom: 1.5rem;
+  }
 
-header > h1 {
-  grid-area: center;
-  margin: 0;
-  z-index: 0;
-}
+  header > h1 {
+    grid-area: center;
+    margin: 0;
+    z-index: 0;
+  }
 
-nav {
-  background-color: #bd027d;
-  grid-column: 1 / -1;
-  grid-row: 1;
-}
+  nav {
+    background-color: #bd027d;
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
 
-nav ul {
-  margin: 0;
-  padding: 0 1rem;
-  list-style-type: none;
-  height: 100%;
+  nav ul {
+    margin: 0;
+    padding: 0 1rem;
+    list-style-type: none;
+    height: 100%;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-nav a {
-  border: 2px solid #960062;
-  background-color: #bd027d;
-  padding: .5em .8em;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.125rem;
-  font-family: "PT Sans Narrow", sans-serif;
-  text-transform: uppercase;
-  color: #eccee2;
-}
+  nav a {
+    border: 2px solid #960062;
+    background-color: #bd027d;
+    padding: .5em .8em;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.125rem;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    color: #eccee2;
+  }
 
-nav a:hover {
-  background-color: #960062;
-}
+  nav a:hover {
+    background-color: #960062;
+  }
 
-main {
-  padding: 0 1rem;
-}
+  main {
+    padding: 0 1rem;
+  }
 
-main p {
-  margin: 0 0 1.5rem;
-  font-size: 1.125rem;
-}
+  main p {
+    margin: 0 0 1.5rem;
+    font-size: 1.125rem;
+  }
 
-section {
-  padding: 1.5rem 0;
-  border-bottom: 2px solid #afafaf;
-  border-top: 2px solid #afafaf;
-}
+  section {
+    padding: 1.5rem 0;
+    border-bottom: 2px solid #afafaf;
+    border-top: 2px solid #afafaf;
+  }
 
-h2 {
-  font-family: "PT Sans Narrow", sans-serif;
-  margin: 0 0 1.5rem;
-}
+  h2 {
+    font-family: "PT Sans Narrow", sans-serif;
+    margin: 0 0 1.5rem;
+  }
 
-section ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  section ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 
-section ul li {
-  background-color: #ccc;
-  border: 2px solid #afafaf;
-  border-radius: 6px;
+  section ul li {
+    background-color: #ccc;
+    border: 2px solid #afafaf;
+    border-radius: 6px;
 
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "top"
-  "middle"
-  "bottom"
-}
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "top"
+    "middle"
+    "bottom"
+  }
 
-section h3 {
-  grid-area: bottom;
-  font-family: "PT Sans Narrow", sans-serif;
-  text-align: center;
-  z-index: 1;
-  background-color:  rgba(0, 0, 0, .1)
-}
+  section h3 {
+    grid-area: bottom;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-align: center;
+    z-index: 1;
+    background-color:  rgba(0, 0, 0, .1)
+  }
+
+  section li > img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+
+  section div {
+    grid-area: top;
+    background-color: rgba(0, 0, 0, .1);
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border-radius: 1em 0 0 1em;
+    justify-self: end;
+    padding:  0 .5em;
+    margin:  .5em 0 0;
+    z-index: 1;
+    font-style: italic;
+  }
+
+  div strong {
+    font-weight: normal;
+  }
+
+  section div img {
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 0.875rem;
+    align-items: center;
+  }
+
+  footer a {
+    color: #000;
+  }
